@@ -14,7 +14,6 @@ public class GameControllerScript : MonoBehaviour
 	public GameObject SmallDirectEnemy;
 	public GameObject MediumEnemyB17Type2;
 	public GameObject MediumEnemyBF109E;
-	public GameObject Cloud_0;
 
 	private bool isGameOver;
 
@@ -63,24 +62,10 @@ public class GameControllerScript : MonoBehaviour
 		}
 	}
 
-	IEnumerator BuildCloud()
-	{
-		while (true)
-		{
-			Instantiate(
-			Cloud_0,
-			new Vector3(Random.Range(-6f, 6f), transform.position.y, 0f),
-			transform.rotation
-			);
-			yield return new WaitForSeconds(4f);
-		}
-	}
-
 	// Start is called before the first frame update
 	void Start()
 	{
 		StartCoroutine("SpawnEnemy");
-		StartCoroutine("BuildCloud");
 		StartCoroutine("SpawnMediumEnemy");
 
 		StartCoroutine("SpawnBF109E");
