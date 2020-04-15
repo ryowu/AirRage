@@ -24,11 +24,18 @@ namespace Assets.Scripts.Enemy
 		{
 			if (collision.gameObject.CompareTag("Player"))
 			{
-				AudioManager.PlaySound(AudioManager.SoundEffect.Explode);
-				gameController.GameOver();
-				Instantiate(explosion, collision.transform.position, collision.transform.rotation);
-				Destroy(collision.gameObject);
-				Destroy(gameObject);
+				if (collision.gameObject.GetComponent<PlayerScript>().GetHit())
+				{
+					Destroy(gameObject);
+				}
+
+				if(collision.gameObject.GetComponent<PlayerScript>().HP <= 0)
+				{
+					AudioManager.PlaySound(AudioManager.SoundEffect.Explode);
+					gameController.GameOver();
+					Instantiate(explosion, collision.transform.position, collision.transform.rotation);
+					Destroy(collision.gameObject);
+				}
 			}
 		}
 	}

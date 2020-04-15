@@ -9,10 +9,16 @@ public class PlayerScript : MonoBehaviour
 
 	public int BulletLevel;
 
+	public int HP;
+
+	public bool IsImmune;
+
 	// Start is called before the first frame update
 	void Start()
 	{
-		BulletLevel = 4;
+		IsImmune = false;
+		HP = 3;
+		BulletLevel = 1;
 	}
 
 	// Update is called once per frame
@@ -31,6 +37,30 @@ public class PlayerScript : MonoBehaviour
 			AudioManager.PlaySound(AudioManager.SoundEffect.GunMagnum);
 			InitBullets();
 		}
+	}
+
+	public bool GetHit()
+	{
+		if (!IsImmune)
+		{
+			HP -= 1;
+			if (HP > 0)
+				StartCoroutine(Immune());
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	IEnumerator Immune()
+	{
+		IsImmune = true;
+		GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, .5f);
+		yield return new WaitForSeconds(3f);
+		GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+		IsImmune = false;
 	}
 
 	void InitBullets()
