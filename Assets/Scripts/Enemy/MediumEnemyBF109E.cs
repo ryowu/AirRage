@@ -36,7 +36,7 @@ namespace Assets.Scripts.Enemy
 			{
 				if (transform.rotation.z <= 0.7f || transform.rotation.z >= -0.7)
 				{
-					transform.Rotate(0, 0, 0.1f * direction);
+					transform.Rotate(0, 0, 10f * direction * Time.deltaTime);
 					dy = speed * -1f * Time.deltaTime * Mathf.Cos(transform.rotation.z);
 				}
 				else
