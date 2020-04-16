@@ -32,6 +32,16 @@ public class PlayerScript : MonoBehaviour
 
 		transform.position = new Vector3(dx, dy);
 
+		foreach (Touch t in Input.touches)
+		{
+			if (t.phase == TouchPhase.Began)
+			{
+				AudioManager.PlaySound(AudioManager.SoundEffect.GunMagnum);
+				InitBullets();
+				break;
+			}
+		}
+
 		if (Input.GetButtonDown("Jump"))
 		{
 			AudioManager.PlaySound(AudioManager.SoundEffect.GunMagnum);
@@ -52,6 +62,12 @@ public class PlayerScript : MonoBehaviour
 		{
 			return false;
 		}
+	}
+
+	public void BulletPowerUp()
+	{
+		if (BulletLevel <= 3)
+			BulletLevel++;
 	}
 
 	IEnumerator Immune()

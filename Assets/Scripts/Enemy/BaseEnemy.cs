@@ -14,6 +14,7 @@ namespace Assets.Scripts.Enemy
 
 		//Enemy Property
 		public int HP;
+		public float Speed;
 
 		public void Start()
 		{
@@ -37,6 +38,7 @@ namespace Assets.Scripts.Enemy
 					gameController.AddScore(10);
 					Instantiate(explosion, transform.position, transform.rotation);
 					Destroy(gameObject);
+					EnemyDestroied();
 				}
 			}
 
@@ -45,6 +47,7 @@ namespace Assets.Scripts.Enemy
 				if (collision.gameObject.GetComponent<PlayerScript>().GetHit())
 				{
 					Destroy(gameObject);
+					EnemyDestroied();
 					Instantiate(explosion, transform.position, transform.rotation);
 				}
 
@@ -56,6 +59,10 @@ namespace Assets.Scripts.Enemy
 					Destroy(collision.gameObject);
 				}
 			}
+		}
+
+		public virtual void EnemyDestroied()
+		{ 
 		}
 	}
 }

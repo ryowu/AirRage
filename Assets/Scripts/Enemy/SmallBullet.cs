@@ -10,6 +10,9 @@ namespace Assets.Scripts.Enemy
 
 		private GameControllerScript gameController;
 
+		public float dx;
+		public float dy;
+
 		private void Start()
 		{
 			gameController = GameObject.FindWithTag("GameController").GetComponent<GameControllerScript>();
@@ -17,7 +20,7 @@ namespace Assets.Scripts.Enemy
 
 		void Update()
 		{
-			transform.position += new Vector3(0, -4f * Time.deltaTime);
+			transform.position += new Vector3(dx * Time.deltaTime, dy * Time.deltaTime);
 		}
 
 		public void OnTriggerEnter2D(Collider2D collision)

@@ -69,12 +69,16 @@
     <Compile Include="Assets\Scripts\BoundaryScript.cs" />
     <Compile Include="Assets\Scripts\BulletScrpit.cs" />
     <Compile Include="Assets\Scripts\Cloud.cs" />
+    <Compile Include="Assets\Scripts\CrystalPowerCell.cs" />
     <Compile Include="Assets\Scripts\Enemy\BaseEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\CurveSmallEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemy\DirectSmallEnemy.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyBF109EType2.cs" />
     <Compile Include="Assets\Scripts\Enemy\MediumEnemyB17Type2.cs" />
-    <Compile Include="Assets\Scripts\Enemy\MediumEnemyBF109E.cs" />
+    <Compile Include="Assets\Scripts\Enemy\MediumEnemyBF109EType1.cs" />
     <Compile Include="Assets\Scripts\Enemy\SmallBullet.cs" />
+    <Compile Include="Assets\Scripts\EnemySpawnTask.cs" />
+    <Compile Include="Assets\Scripts\Enums.cs" />
     <Compile Include="Assets\Scripts\ExplosionScript.cs" />
     <Compile Include="Assets\Scripts\GameControllerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />

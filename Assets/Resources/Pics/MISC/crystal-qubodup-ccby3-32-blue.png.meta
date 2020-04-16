@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: 7381525412d19d945a80673d7ee92761
+guid: 3d0e17bcda2c1cb438361fec80ea8bd4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4101807411320628619
-    second: fighters_0
+      213: -7126765485738322318
+    second: crystal-qubodup-ccby3-32-blue_0
   - first:
-      213: 5439370032352145196
-    second: fighters_1
+      213: -6557915735700588639
+    second: crystal-qubodup-ccby3-32-blue_1
   - first:
-      213: 3113142165400431262
-    second: fighters_2
+      213: -794120999025911922
+    second: crystal-qubodup-ccby3-32-blue_2
   - first:
-      213: -1413254819171902843
-    second: fighters_3
+      213: 63445666632199606
+    second: crystal-qubodup-ccby3-32-blue_3
+  - first:
+      213: -6148742646215419447
+    second: crystal-qubodup-ccby3-32-blue_4
+  - first:
+      213: -98112731404210051
+    second: crystal-qubodup-ccby3-32-blue_5
+  - first:
+      213: 367493489881783140
+    second: crystal-qubodup-ccby3-32-blue_6
+  - first:
+      213: 4654980107404848300
+    second: crystal-qubodup-ccby3-32-blue_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -135,13 +147,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fighters_0
+      name: crystal-qubodup-ccby3-32-blue_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 198
-        width: 105
-        height: 96
+        x: 5
+        y: 0
+        width: 22
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57a5b2744e37317c0800000000000000
-      internalID: -4101807411320628619
+      spriteID: 2769d09cc84a81d90800000000000000
+      internalID: -7126765485738322318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighters_1
+      name: crystal-qubodup-ccby3-32-blue_1
       rect:
         serializedVersion: 2
-        x: 190
-        y: 199
-        width: 115
-        height: 95
+        x: 37
+        y: 0
+        width: 21
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2f2144b9368c7b40800000000000000
-      internalID: 5439370032352145196
+      spriteID: 1a73f9a326a9df4a0800000000000000
+      internalID: -6557915735700588639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighters_2
+      name: crystal-qubodup-ccby3-32-blue_2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 48
-        width: 100
-        height: 87
+        x: 69
+        y: 0
+        width: 21
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,20 +203,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9aabf72e4a143b20800000000000000
-      internalID: 3113142165400431262
+      spriteID: e87d168a827baf4f0800000000000000
+      internalID: -794120999025911922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fighters_3
+      name: crystal-qubodup-ccby3-32-blue_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd66266f7761e000800000000000000
+      internalID: 63445666632199606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal-qubodup-ccby3-32-blue_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9d80504274baaa0800000000000000
+      internalID: -6148742646215419447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal-qubodup-ccby3-32-blue_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7075b89dfe63aef0800000000000000
+      internalID: -98112731404210051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal-qubodup-ccby3-32-blue_6
       rect:
         serializedVersion: 2
         x: 198
-        y: 35
-        width: 109
-        height: 95
+        y: 0
+        width: 21
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,8 +287,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58a562eca3c136ce0800000000000000
-      internalID: -1413254819171902843
+      spriteID: 46b1ca9c169991500800000000000000
+      internalID: 367493489881783140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crystal-qubodup-ccby3-32-blue_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac206a9ebfc99040800000000000000
+      internalID: 4654980107404848300
       vertices: []
       indices: 
       edges: []

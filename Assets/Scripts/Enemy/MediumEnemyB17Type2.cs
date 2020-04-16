@@ -27,11 +27,17 @@ namespace Assets.Scripts.Enemy
 					transform.rotation
 				);
 
+				SmallBullet.GetComponent<SmallBullet>().dx = 0;
+				SmallBullet.GetComponent<SmallBullet>().dy = -4f;
+
 				Instantiate(
 							SmallBullet,
 							new Vector3(transform.position.x + 0.7f, transform.position.y - 0.3f, 0f),
 							transform.rotation
 						);
+
+				SmallBullet.GetComponent<SmallBullet>().dx = 0;
+				SmallBullet.GetComponent<SmallBullet>().dy = -4f;
 
 				bulletCountGap--;
 				if (bulletCountGap <= 0)

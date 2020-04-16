@@ -4,11 +4,10 @@ using UnityEngine;
 
 namespace Assets.Scripts.Enemy
 {
-	public class MediumEnemyBF109E : BaseEnemy
+	public class MediumEnemyBF109EType1 : BaseEnemy
 	{
 		private float dx;
 		private float dy;
-		private float speed;
 		private float direction;
 
 		public override void Initialize()
@@ -21,7 +20,7 @@ namespace Assets.Scripts.Enemy
 
 			dx = 0;
 			dy = 1f;
-			speed = 2f;
+			Speed = 2f;
 			base.Initialize();
 		}
 
@@ -30,21 +29,21 @@ namespace Assets.Scripts.Enemy
 			if (transform.position.y > 4)
 			{
 				dx = 0;
-				dy = speed * -1f * Time.deltaTime;
+				dy = Speed * -1f * Time.deltaTime;
 			}
 			else
 			{
 				if (transform.rotation.z <= 0.7f || transform.rotation.z >= -0.7)
 				{
 					transform.Rotate(0, 0, 10f * direction * Time.deltaTime);
-					dy = speed * -1f * Time.deltaTime * Mathf.Cos(transform.rotation.z);
+					dy = Speed * -1f * Time.deltaTime * Mathf.Cos(transform.rotation.z);
 				}
 				else
 				{
 					dy = 0;
 				}
 
-				dx = speed * Time.deltaTime * Mathf.Sin(transform.rotation.z);
+				dx = Speed * Time.deltaTime * Mathf.Sin(transform.rotation.z);
 
 			}
 
